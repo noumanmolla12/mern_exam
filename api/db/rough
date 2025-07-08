@@ -1,0 +1,14 @@
+<select
+            className="form-select"
+            id="question"
+            name="question"
+            value={formData.question}
+            onChange={handleChange}
+          >
+            <option value="">Select Question</option>
+            {questions.map((question) => (
+              <option key={question._id} value={question._id}>
+                {question.question_name}
+              </option>
+            ))}
+          </select>
